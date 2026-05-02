@@ -1,0 +1,16 @@
+model:
+  name: distilbert-base-uncased
+  max_length: 512
+  num_labels: 8
+
+chunking:
+  window_size: 250
+  overlap: 50
+
+threshold:
+  method: minimum_correct_confidence
+  value: 0.72
+
+sbert:
+  model_name: all-MiniLM-L6-v2
+  similarity_metric: cosine
